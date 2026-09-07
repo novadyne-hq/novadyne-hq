@@ -6,19 +6,17 @@ path, an MCP server, and pay-per-call x402 support where it fits.
 
 ### What we build
 
-**[Ledger MCP](https://github.com/novadyne-hq/ledger-mcp)** — a double-entry ledger built for
-agent spend. Track every call, cap budgets, reconcile to the cent. x402-native (pays per call),
-on the [official MCP registry](https://registry.modelcontextprotocol.io) as
-`io.github.novadyne-hq/ledger-mcp`, `pip install ledger-mcp`. → [ledger.novadyne.ai](https://ledger.novadyne.ai)
-
 **[VulnFeed](https://vulnfeed.novadyne.ai)** — a security MCP server that answers "how bad is
 this CVE, really?" with live [EPSS](https://www.first.org/epss/) exploitation-probability data,
-not just CVSS. Nine tools, `pip install vulnfeed-mcp`, MCP registry `io.github.novadyne-hq/vulnfeed`.
+not just CVSS. Nine tools, `pip install vulnfeed-mcp`, on the
+[official MCP registry](https://registry.modelcontextprotocol.io) as `io.github.novadyne-hq/vulnfeed`.
+→ [source](https://github.com/novadyne-hq/vulnfeed-mcp)
 
-**[Attestify](https://attestify.novadyne.ai)** — issue cryptographically verifiable certificates,
-each with a permanent public verify page and an Ed25519 signature anyone can check. Ships as an
-[n8n community node](https://github.com/novadyne-hq/n8n-nodes-attestify) (`n8n-nodes-attestify`)
-so it drops into a workflow.
+**[epss-cve-feed](https://github.com/novadyne-hq/epss-cve-feed)** — a free, machine-readable feed of
+notable open-source dependency vulnerabilities, ranked by exploitation probability.
+
+**[x402-verify-canary](https://github.com/novadyne-hq/x402-verify-canary)** — catch silent x402
+payment-acceptance regressions before your buyers do.
 
 ### How we work
 
